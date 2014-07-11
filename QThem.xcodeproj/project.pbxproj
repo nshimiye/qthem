@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		418920D019703C87005E43E3 /* qthemCD.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 418920CC19703C87005E43E3 /* qthemCD.xcdatamodel */; };
+		418920F419703F56005E43E3 /* QTorigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 418920F319703F56005E43E3 /* QTorigin.m */; };
+		418920F719703F56005E43E3 /* QTquotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 418920F619703F56005E43E3 /* QTquotation.m */; };
+		418920FA19704036005E43E3 /* QTquoteList.m in Sources */ = {isa = PBXBuildFile; fileRef = 418920F919704036005E43E3 /* QTquoteList.m */; };
 		418FA4AB1964BBDB008FEF88 /* QTaddQuoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 418FA4AA1964BBDB008FEF88 /* QTaddQuoteVC.m */; };
 		41C048021964A97B00C63F08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C048011964A97B00C63F08 /* Foundation.framework */; };
 		41C048041964A97B00C63F08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C048031964A97B00C63F08 /* CoreGraphics.framework */; };
@@ -16,8 +20,6 @@
 		41C048101964A97B00C63F08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C0480F1964A97B00C63F08 /* main.m */; };
 		41C048141964A97B00C63F08 /* QTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C048131964A97B00C63F08 /* QTAppDelegate.m */; };
 		41C048171964A97B00C63F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C048151964A97B00C63F08 /* Main.storyboard */; };
-		41C0481A1964A97B00C63F08 /* QThem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41C048181964A97B00C63F08 /* QThem.xcdatamodeld */; };
-		41C0481D1964A97B00C63F08 /* QTMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C0481C1964A97B00C63F08 /* QTMasterViewController.m */; };
 		41C048201964A97B00C63F08 /* QTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C0481F1964A97B00C63F08 /* QTDetailViewController.m */; };
 		41C048221964A97B00C63F08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C048211964A97B00C63F08 /* Images.xcassets */; };
 		41C048291964A97B00C63F08 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C048281964A97B00C63F08 /* XCTest.framework */; };
@@ -49,6 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		418920CC19703C87005E43E3 /* qthemCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = qthemCD.xcdatamodel; sourceTree = "<group>"; };
+		418920F219703F56005E43E3 /* QTorigin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTorigin.h; sourceTree = "<group>"; };
+		418920F319703F56005E43E3 /* QTorigin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTorigin.m; sourceTree = "<group>"; };
+		418920F519703F56005E43E3 /* QTquotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTquotation.h; sourceTree = "<group>"; };
+		418920F619703F56005E43E3 /* QTquotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTquotation.m; sourceTree = "<group>"; };
+		418920F819704036005E43E3 /* QTquoteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTquoteList.h; sourceTree = "<group>"; };
+		418920F919704036005E43E3 /* QTquoteList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTquoteList.m; sourceTree = "<group>"; };
 		418FA4A91964BBDB008FEF88 /* QTaddQuoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTaddQuoteVC.h; sourceTree = "<group>"; };
 		418FA4AA1964BBDB008FEF88 /* QTaddQuoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTaddQuoteVC.m; sourceTree = "<group>"; };
 		41C047FE1964A97B00C63F08 /* QThem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QThem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,9 +72,6 @@
 		41C048121964A97B00C63F08 /* QTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTAppDelegate.h; sourceTree = "<group>"; };
 		41C048131964A97B00C63F08 /* QTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTAppDelegate.m; sourceTree = "<group>"; };
 		41C048161964A97B00C63F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41C048191964A97B00C63F08 /* QThem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QThem.xcdatamodel; sourceTree = "<group>"; };
-		41C0481B1964A97B00C63F08 /* QTMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTMasterViewController.h; sourceTree = "<group>"; };
-		41C0481C1964A97B00C63F08 /* QTMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTMasterViewController.m; sourceTree = "<group>"; };
 		41C0481E1964A97B00C63F08 /* QTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTDetailViewController.h; sourceTree = "<group>"; };
 		41C0481F1964A97B00C63F08 /* QTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTDetailViewController.m; sourceTree = "<group>"; };
 		41C048211964A97B00C63F08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -122,6 +128,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		418920C519703C3D005E43E3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				418920F519703F56005E43E3 /* QTquotation.h */,
+				418920F619703F56005E43E3 /* QTquotation.m */,
+				418920F219703F56005E43E3 /* QTorigin.h */,
+				418920F319703F56005E43E3 /* QTorigin.m */,
+				418920CC19703C87005E43E3 /* qthemCD.xcdatamodel */,
+				418920F819704036005E43E3 /* QTquoteList.h */,
+				418920F919704036005E43E3 /* QTquoteList.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		41C047F51964A97B00C63F08 = {
 			isa = PBXGroup;
 			children = (
@@ -165,15 +185,13 @@
 		41C048091964A97B00C63F08 /* QThem */ = {
 			isa = PBXGroup;
 			children = (
+				418920C519703C3D005E43E3 /* model */,
 				41C048121964A97B00C63F08 /* QTAppDelegate.h */,
 				41C048131964A97B00C63F08 /* QTAppDelegate.m */,
 				41C048151964A97B00C63F08 /* Main.storyboard */,
-				41C0481B1964A97B00C63F08 /* QTMasterViewController.h */,
-				41C0481C1964A97B00C63F08 /* QTMasterViewController.m */,
 				41C0481E1964A97B00C63F08 /* QTDetailViewController.h */,
 				41C0481F1964A97B00C63F08 /* QTDetailViewController.m */,
 				41C048211964A97B00C63F08 /* Images.xcassets */,
-				41C048181964A97B00C63F08 /* QThem.xcdatamodeld */,
 				41C0480A1964A97B00C63F08 /* Supporting Files */,
 				41C048511964ADB100C63F08 /* QTmasterVC.h */,
 				41C048521964ADB100C63F08 /* QTmasterVC.m */,
@@ -311,11 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				418FA4AB1964BBDB008FEF88 /* QTaddQuoteVC.m in Sources */,
+				418920F719703F56005E43E3 /* QTquotation.m in Sources */,
+				418920FA19704036005E43E3 /* QTquoteList.m in Sources */,
+				418920D019703C87005E43E3 /* qthemCD.xcdatamodel in Sources */,
+				418920F419703F56005E43E3 /* QTorigin.m in Sources */,
 				41C048101964A97B00C63F08 /* main.m in Sources */,
 				41C048141964A97B00C63F08 /* QTAppDelegate.m in Sources */,
-				41C0481A1964A97B00C63F08 /* QThem.xcdatamodeld in Sources */,
 				41C048201964A97B00C63F08 /* QTDetailViewController.m in Sources */,
-				41C0481D1964A97B00C63F08 /* QTMasterViewController.m in Sources */,
 				41C048531964ADB100C63F08 /* QTmasterVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,19 +561,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		41C048181964A97B00C63F08 /* QThem.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				41C048191964A97B00C63F08 /* QThem.xcdatamodel */,
-			);
-			currentVersion = 41C048191964A97B00C63F08 /* QThem.xcdatamodel */;
-			path = QThem.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 41C047F61964A97B00C63F08 /* Project object */;
 }

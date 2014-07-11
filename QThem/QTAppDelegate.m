@@ -8,8 +8,6 @@
 
 #import "QTAppDelegate.h"
 
-#import "QTMasterViewController.h"
-
 @implementation QTAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
