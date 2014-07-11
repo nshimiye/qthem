@@ -11,8 +11,6 @@
 		418920F419703F56005E43E3 /* QTorigin.m in Sources */ = {isa = PBXBuildFile; fileRef = 418920F319703F56005E43E3 /* QTorigin.m */; };
 		418920F719703F56005E43E3 /* QTquotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 418920F619703F56005E43E3 /* QTquotation.m */; };
 		418920FA19704036005E43E3 /* QTquoteList.m in Sources */ = {isa = PBXBuildFile; fileRef = 418920F919704036005E43E3 /* QTquoteList.m */; };
-		418920FD19704F9A005E43E3 /* quoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 418920FC19704F9A005E43E3 /* quoteCell.xib */; };
-		4189210019705744005E43E3 /* QTquotecv.m in Sources */ = {isa = PBXBuildFile; fileRef = 418920FF19705744005E43E3 /* QTquotecv.m */; };
 		418FA4AB1964BBDB008FEF88 /* QTaddQuoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 418FA4AA1964BBDB008FEF88 /* QTaddQuoteVC.m */; };
 		41C048021964A97B00C63F08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C048011964A97B00C63F08 /* Foundation.framework */; };
 		41C048041964A97B00C63F08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C048031964A97B00C63F08 /* CoreGraphics.framework */; };
@@ -40,6 +38,8 @@
 		41C0484F1964AAAF00C63F08 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C048471964AAAE00C63F08 /* StoreKit.framework */; };
 		41C048501964AAAF00C63F08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C048481964AAAF00C63F08 /* SystemConfiguration.framework */; };
 		41C048531964ADB100C63F08 /* QTmasterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C048521964ADB100C63F08 /* QTmasterVC.m */; };
+		41CA0AA8197078DD00E9E323 /* quoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CA0AA7197078DD00E9E323 /* quoteCell.xib */; };
+		41CA0AB01970797C00E9E323 /* QTquotecv.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA0AAF1970797C00E9E323 /* QTquotecv.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +60,6 @@
 		418920F619703F56005E43E3 /* QTquotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTquotation.m; sourceTree = "<group>"; };
 		418920F819704036005E43E3 /* QTquoteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTquoteList.h; sourceTree = "<group>"; };
 		418920F919704036005E43E3 /* QTquoteList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTquoteList.m; sourceTree = "<group>"; };
-		418920FC19704F9A005E43E3 /* quoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = quoteCell.xib; sourceTree = "<group>"; };
-		418920FE19705744005E43E3 /* QTquotecv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTquotecv.h; sourceTree = "<group>"; };
-		418920FF19705744005E43E3 /* QTquotecv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTquotecv.m; sourceTree = "<group>"; };
 		418FA4A91964BBDB008FEF88 /* QTaddQuoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTaddQuoteVC.h; sourceTree = "<group>"; };
 		418FA4AA1964BBDB008FEF88 /* QTaddQuoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTaddQuoteVC.m; sourceTree = "<group>"; };
 		41C047FE1964A97B00C63F08 /* QThem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QThem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +93,9 @@
 		41C048481964AAAF00C63F08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		41C048511964ADB100C63F08 /* QTmasterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTmasterVC.h; sourceTree = "<group>"; };
 		41C048521964ADB100C63F08 /* QTmasterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTmasterVC.m; sourceTree = "<group>"; };
+		41CA0AA7197078DD00E9E323 /* quoteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = quoteCell.xib; path = views/quoteCell.xib; sourceTree = "<group>"; };
+		41CA0AAD1970794300E9E323 /* QTquotecv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QTquotecv.h; path = views/QTquotecv.h; sourceTree = "<group>"; };
+		41CA0AAF1970797C00E9E323 /* QTquotecv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QTquotecv.m; path = views/QTquotecv.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,9 +150,9 @@
 		418920FB19704F77005E43E3 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				418920FC19704F9A005E43E3 /* quoteCell.xib */,
-				418920FE19705744005E43E3 /* QTquotecv.h */,
-				418920FF19705744005E43E3 /* QTquotecv.m */,
+				41CA0AA7197078DD00E9E323 /* quoteCell.xib */,
+				41CA0AAD1970794300E9E323 /* QTquotecv.h */,
+				41CA0AAF1970797C00E9E323 /* QTquotecv.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -323,9 +323,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				418920FD19704F9A005E43E3 /* quoteCell.xib in Resources */,
 				41C048221964A97B00C63F08 /* Images.xcassets in Resources */,
 				41C0480E1964A97B00C63F08 /* InfoPlist.strings in Resources */,
+				41CA0AA8197078DD00E9E323 /* quoteCell.xib in Resources */,
 				41C048171964A97B00C63F08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,9 +351,9 @@
 				418920D019703C87005E43E3 /* qthemCD.xcdatamodel in Sources */,
 				418920F419703F56005E43E3 /* QTorigin.m in Sources */,
 				41C048101964A97B00C63F08 /* main.m in Sources */,
-				4189210019705744005E43E3 /* QTquotecv.m in Sources */,
 				41C048141964A97B00C63F08 /* QTAppDelegate.m in Sources */,
 				41C048201964A97B00C63F08 /* QTDetailViewController.m in Sources */,
+				41CA0AB01970797C00E9E323 /* QTquotecv.m in Sources */,
 				41C048531964ADB100C63F08 /* QTmasterVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
