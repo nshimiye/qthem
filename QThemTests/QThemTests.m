@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "QTquoteList.h"
 
 @interface QThemTests : XCTestCase
 
@@ -26,9 +27,26 @@
     [super tearDown];
 }
 
-- (void)testExample
+//testing radixSort for now
+-(void)testSearchEngine
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    QTquoteList *sengine = [[QTquoteList alloc]init];
+    
+    NSMutableArray *list = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt: 321],
+                            [NSNumber numberWithInt: 54],
+                            [NSNumber numberWithInt: 3],
+                            [NSNumber numberWithInt: 23],
+                            [NSNumber numberWithInt: 74],
+                            [NSNumber numberWithInt: 345],
+                            [NSNumber numberWithInt: 213],
+                            [NSNumber numberWithInt: 20], nil];
+    
+    NSLog(@"%@",list);
+    
+    [sengine radixSort:list];
+    
+     NSLog(@"%@",list);
+    
 }
 
 @end

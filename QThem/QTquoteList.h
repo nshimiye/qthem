@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) NSMutableArray *quoteList;
 
+-(void) radixSort:(NSMutableArray *)list;
+
 -(void) sortObjectBy:(NSArray *)list usedKeyword:(NSString *)keyWord objectAttr:(NSString *)attr;
 
 
