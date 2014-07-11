@@ -13,19 +13,55 @@
 
 /****************** helper methods for radix *******************/
 //i need to check the differencr between nsinteger and int
--(int) getDigit: (NSInteger )value thePosition:(int)position
+//the first digit (i.e. digit at index 0) is the least significant digit
+-(NSInteger) getDigit: (NSInteger )value atIndex:(NSInteger)index
 {
-    return 0;
+ 
+    NSString * dconvert = [NSString stringWithFormat:@"%ld",(long)value];
+    
+    NSInteger realIndex = dconvert.length - index - 1;
+    
+    
+    UniChar digit = [dconvert characterAtIndex:realIndex];
+    
+    NSLog(@"%hu", digit);
+    
+    return digit;
+    
 }
 
--(int) countDigits: (int)value
+-(NSInteger) countDigits: (NSInteger)value
 {
-    return 3;
+    
+    NSInteger digitsCount = 0;
+    
+    NSString * dconvert = [NSString stringWithFormat:@"%ld",(long)value];
+    
+    digitsCount = dconvert.length;
+    
+    return digitsCount;
 }
 
--(int) getMax:(NSArray *)list
+-(NSInteger) getMax:(NSArray *)list
 {
-    return 100;
+    if (list.count <=0) {
+        return 0;
+    }
+    
+    NSInteger max = (NSInteger)[list objectAtIndex:0];
+    
+    for (int i=0; i<list.count; i++) {
+        
+        if (max < (NSInteger) list[i]) { //two ways of accessing element of array in OBJ C
+            
+            max = (NSInteger)[list objectAtIndex:i];
+
+        }
+        
+    }
+    
+    
+    return max;
 }
 
 /****************** end ****************************************/
@@ -47,12 +83,12 @@
     bucket0, bucket1,bucket2,bucket3,bucket4,bucket5, nil];
     
     
-    int maxDigits = [self countDigits:[self getMax:list]]; //compute k, the # of digits that the max value has
+    NSInteger maxDigits = [self countDigits:[self getMax:list]]; //compute k, the # of digits that the max value has
     
-    for (int k=0; k<= maxDigits; k++) {
+    for (NSInteger k=0; k<= maxDigits; k++) {
     
-        for (int i=0; i<list.count; i++) {
-            int pos = [self getDigit:((int)[list objectAtIndex:i]) thePosition:k];
+        for (NSInteger i=0; i<list.count; i++) {
+            NSInteger pos = [self getDigit:((NSInteger)[list objectAtIndex:i]) atIndex:k];
         
             [[bucketHolder objectAtIndex:pos] addObject:[list objectAtIndex:i]];
         }
