@@ -18,13 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    QTMasterViewController *controller = (QTMasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    
+    [Parse setApplicationId:@"uwdtAyWeIpCtvmdHmoycUbY6S9z9Kl96RipKh91K"
+                  clientKey:@"VOgC1WziGMJJMeBQXXuAlWCXVWq1kT68Tabi9a1G"];    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

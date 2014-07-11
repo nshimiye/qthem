@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 #import <CoreData/CoreData.h>
 
-@interface QTMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface QTMasterViewController : PFQueryTableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
