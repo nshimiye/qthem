@@ -70,6 +70,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // remove the cell separator
+//    self.tableView.separatorColor = [UIColor clearColor];
+    
     // Uncomment the following line for Universal Apps
     //self.detailViewController = (CMQDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
@@ -155,16 +158,24 @@
     // If you want a custom cell, create a new subclass of PFTableViewCell, set the cell identifier in IB, then change this string to match
     // You can access any IBOutlets declared in the .h file from here and set the values accordingly
     // "Cell" is the default cell identifier in a new Master-Detail Project
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"QTcellid";
     
-    PFTableViewCell *cell = (PFTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    PFTableViewCell *cell = (PFTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    QTquotecv *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
     if (cell == nil) {
-        cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"quoteCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
+    
     
      NSLog(@"%@", object);
     // Configure the cell
-    cell.textLabel.text = [object objectForKey:self.textKey];
+    
+    cell.theQuote.text = @"USA politics is not like some third world banana republic";
+    
+    cell.quoteAuthor.text = [object objectForKey:self.textKey];
     //cell.imageView.file = [object objectForKey:self.imageKey];
     
     return cell;
@@ -255,4 +266,15 @@
         [[segue destinationViewController] setDetailItem:object];
     }
 }
+
+
+
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 133;
+}
+
+
+
 @end
